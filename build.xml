@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="StarHydro" default="build" basedir=".">
+	<target name="build" depends="jar">
+	</target>
+
+	<target name="jar" depends="">
+		<echo>Creating JAR</echo>
+		<jar destfile="StarJFlvLib.jar">
+			<fileset dir="bin" id="bin">
+				<include name="**" />
+			</fileset>
+			<fileset dir="src" id="src">
+				<include name="**" />
+			</fileset>
+			<fileset dir="supporting" id="src">
+				<include name="**" />
+			</fileset>
+		</jar>
+	</target>
+
+</project>
